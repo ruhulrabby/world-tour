@@ -7,6 +7,7 @@ const displayCountries = (countries) =>{
 for ( let i = 0; i < countries.length; i++) {
      const country = countries[i];
      const countryDiv = document.createElement('div');
+     countryDiv.className = 'country'
      
     //  const h3 = document.createElement('h3');
     //  h3.innerText = country.name;
@@ -17,7 +18,7 @@ for ( let i = 0; i < countries.length; i++) {
     //  countryDiv.appendChild(p);
 
     const countryInfo = `
-        <h3>${country.name}</h3>
+        <h3 class = 'country-name' >${country.name}</h3>
         <p>${country.capital}</p>
     `
     countryDiv.innerHTML = countryInfo;

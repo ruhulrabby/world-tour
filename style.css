@@ -1,0 +1,21 @@
+body {
+  background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+.country {
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.country-name {
+  font-size: 45px;
+  color: magenta;
+}
+
+#countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
